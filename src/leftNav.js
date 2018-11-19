@@ -13,9 +13,9 @@ export class LeftNav extends Component {
             href: 'home',
             icon: 'pie-chart'
         },{
-            name: 'Option 2',
+            name: 'list',
             id: 2,
-            href: 'home',
+            href: 'list1',
             icon: 'desktop'
         },{
             name: 'Option 3',
@@ -115,6 +115,21 @@ export class LeftNav extends Component {
                 }
             })
         )
+    }
+    componentDidMount(){
+        const data = {
+            item: {
+                props: {
+                    content: {
+                        key: this.state.lists[0].id,
+                        href: this.state.lists[0].href,
+                        title: this.state.lists[0].name
+                    }
+                }
+            },
+            key: 1
+        };
+        this.handleClick(data);
     }
     render(){
         return(

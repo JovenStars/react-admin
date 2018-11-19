@@ -14,9 +14,7 @@ class SiderDemo extends Component {
         this.state = {
             collapsed: false,
             activeKey: '1',
-            panes: [
-                { title: '首页', content: '123', key: '1', closable: false }
-            ]
+            panes: []
         };
 
     }
