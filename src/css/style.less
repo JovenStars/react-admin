@@ -1,0 +1,184 @@
+@import '~antd/dist/antd.css';
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-style: normal;
+}
+html{
+  overflow: hidden;
+}
+html,body{
+  height: 100%;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #05402c;
+  h1{
+    line-height: 80px;
+    color: #fff;
+    padding-left: 20px;
+    font-weight: 100;
+  }
+  .row-list{
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    margin-right: 10px  ;
+    font-size: 14px;
+    color: #fff;
+    li{
+      margin: 0 5px;
+      cursor: pointer;
+    }
+  }
+}
+ul.row-list{
+  li{
+    display: inline-block;
+  }
+}
+.content{
+  height: 100%;
+  padding-top: 80px;
+  box-sizing: border-box;
+  .left-nav{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    width: 170px;
+    border-right: 1px solid #c3c3c3;
+    cursor: pointer;
+    background: #f1fffc;
+    z-index: 100;
+    dt{
+      position: relative;
+      padding: 10px;
+      background: #35ab86;
+      color: #fff;
+      &:hover{
+        background: #0f7d6a;
+      }
+      &:after{
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        width: 6px;
+        height: 6px;
+        content: "";
+        border-right: 2px solid #ccc;
+        border-bottom: 2px solid #ccc;
+        transition: .2s all;
+        margin-top: -2.8px;
+        transform: rotate(-45deg);
+        box-sizing: border-box;
+      }
+    }
+    dd{
+      transition: all .2s;
+      a{
+        display: block;
+        padding: 5px 5px 5px 20px;
+        font-size: 14px;
+        color: #5d5d5d;
+        &.active,&:hover{
+          background: #88d6bd;
+        }
+      }
+    }
+    dl{
+      border-top: 1px solid #319273;
+      overflow: hidden;
+      transition: all .2s;
+    }
+    dl.active{
+      dt{
+        background: #0f7d6a;
+        color: #fff;
+        &:after{
+          border-color: #fff;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  .pages{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 170px;
+    .page-nav{
+      position: absolute;
+      left: 170px;
+      right: 0;
+      top: 0;
+      height: 30px;
+      padding-top: 3px;
+      border-bottom: 1px solid #009688;
+      font-size: 0;
+      a{
+        display: inline-block;
+        vertical-align: bottom;
+        background: #ececec;
+        margin-left: 2px;
+        padding: 0 30px 0 15px;
+        font-size: 12px;
+        height: 100%;
+        color: #3e3e3e;
+        position: relative;
+        line-height: 23px;
+        &:first-child{
+          padding: 0 15px;
+        }
+        i{
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          line-height: 12px;
+          text-align: center;
+          &:hover{
+            background: #009688;
+            color: #fff;
+          }
+        }
+        &.active{
+          background: #009688;
+          color: #fff;
+          i{
+            &:hover{
+              background: #fff;
+              color: #009688;
+            }
+          }
+        }
+      }
+    }
+    #main{
+      padding-top: 30px;
+      width: 100%;
+      height: 100%;
+      &>.item{
+        display: none;
+        width: 100%;
+        height: 100%;
+        iframe{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

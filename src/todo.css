@@ -1,0 +1,34 @@
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+.trigger:hover {
+  color: #1890ff;
+}
+.logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+#root {
+  height: 100%;
+}
+.ant-layout.ant-layout-has-sider {
+  height: 100%;
+}
+.ant-tabs.ant-tabs-card > .ant-tabs-bar {
+  padding: 0 5px;
+  border-bottom: 1px solid #4999bd;
+}
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab {
+  background: #fff;
+}
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab.ant-tabs-tab-active {
+  background: #4baeda;
+  border-color: #4999bd;
+  color: #fff;
+}
+/*# sourceMappingURL=todo.css.map */
