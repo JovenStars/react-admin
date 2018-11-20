@@ -31,4 +31,30 @@
   border-color: #4999bd;
   color: #fff;
 }
+.ant-advanced-search-form {
+  padding: 24px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+}
+
+.ant-advanced-search-form .ant-form-item {
+  display: flex;
+}
+
+.ant-advanced-search-form .ant-form-item-control-wrapper {
+  flex: 1;
+}
+.ant-tabs-bar{
+  margin-bottom: 0;
+}
+.ant-advanced-search-form .ant-form-item{
+  margin-bottom: 10px;
+}
+.ant-advanced-search-form{
+  padding: 12px 24px;
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding: 8px 16px;
+}
 /*# sourceMappingURL=todo.css.map */

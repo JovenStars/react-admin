@@ -4,6 +4,8 @@ import './json/navs.json';
 
 const {SubMenu} = Menu;
 
+fetch('./json/navs.json')
+
 export class LeftNav extends Component {
     constructor(props) {
         super(props);
@@ -86,7 +88,7 @@ export class LeftNav extends Component {
             }
         });
         if(flag){
-            import(`./modules/${page.href}`).then(mode=>{
+            import(`./pages/${page.href}`).then(mode=>{
                 const Mode = mode.default;
                 page.content = <Mode />;
                 panes.push(page);

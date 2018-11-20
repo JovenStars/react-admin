@@ -18,7 +18,7 @@ export class RightContent extends Component {
     add = (title,href) => {
         const panes = this.props.panes;
         const activeKey = `newTab${this.newTabIndex++}`;
-        import('./modules/user').then(data => {
+        import('./pages/user').then(data => {
             const Home = data.default;
             panes.push({ title: 'New ' +
                     'Tab', content: <Home />, key: activeKey });
@@ -41,16 +41,6 @@ export class RightContent extends Component {
         }
         this.props.onPageChange(panes,activeKey)
     }
-    setContent(pane){
-        if(pane.content){
-            return pane.content
-        }else{
-            import(`./modules/${pane.href}`).then(data => {
-                const Mode = data.default;
-                return (<Mode />);
-            });
-        }
-    }
 
     render() {
         return (
@@ -62,7 +52,7 @@ export class RightContent extends Component {
             >
                 {this.props.panes.map(pane =>
                     <TabPane tab={pane.title} key={pane.key} closable={pane.closable}>
-                        {this.setContent(pane)}
+                        {pane.content}
                     </TabPane>
                 )}
             </Tabs>
