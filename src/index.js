@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
 import 'lodash';
-import { Layout, Icon, Input } from 'antd';
+import { Layout, Icon, Avatar, LocaleProvider } from 'antd';
+import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import {LeftNav} from "./leftNav";
 import {RightContent} from "./rightContent";
+import {OverlayVisible} from "./modules/contentTopBar";
 import 'antd/dist/antd.css';
 import './todo.css';
 const { Header, Sider } = Layout;
@@ -73,35 +75,42 @@ class SiderDemo extends Component {
     }
     render() {
         return (
-            <Layout>
-                <Sider
-                    trigger={null}
-                    collapsible
-                    collapsed={this.state.collapsed}
-                >
-                    <div className="logo" />
-                    <LeftNav
-                        onNavClick={this.handleChangePages}
-                        panes={this.state.panes}
-                        activeKey={this.state.activeKey}
-                    />
-                </Sider>
+            <LocaleProvider locale={zh_CN}>
+
                 <Layout>
-                    <Header style={{ background: '#fff', padding: 0 }}>
-                        <Icon
-                            className="trigger"
-                            type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                            onClick={this.toggle}
+                    <Sider
+                        trigger={null}
+                        collapsible
+                        collapsed={this.state.collapsed}
+                    >
+                        <div className="logo" />
+                        <LeftNav
+                            onNavClick={this.handleChangePages}
+                            panes={this.state.panes}
+                            activeKey={this.state.activeKey}
                         />
-                    </Header>
-                    <RightContent
-                        onChangeActiveKey={this.setActiveKey}
-                        onPageChange={this.handleChangePages}
-                        panes={this.state.panes}
-                        activeKey={this.state.activeKey}
-                    />
+                    </Sider>
+                    <Layout>
+                        <Header style={{ background: '#fff', padding: 0 }}>
+                            <Icon
+                                className="trigger"
+                                type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                                onClick={this.toggle}
+                            />
+                            <div className="top-bar">
+                                <Avatar icon="user" />
+                                <OverlayVisible />
+                            </div>
+                        </Header>
+                        <RightContent
+                            onChangeActiveKey={this.setActiveKey}
+                            onPageChange={this.handleChangePages}
+                            panes={this.state.panes}
+                            activeKey={this.state.activeKey}
+                        />
+                    </Layout>
                 </Layout>
-            </Layout>
+            </LocaleProvider>
         );
     }
 }

@@ -3,79 +3,37 @@ import { Menu, Icon } from 'antd';
 import './json/navs.json';
 
 const {SubMenu} = Menu;
-
-fetch('./json/navs.json')
-
 export class LeftNav extends Component {
     constructor(props) {
         super(props);
-        const lists = [{
-            name: '首页',
-            id: 1,
-            href: 'home',
-            icon: 'pie-chart'
-        },{
-            name: 'list',
-            id: 2,
-            href: 'list1',
-            icon: 'desktop'
-        },{
-            name: 'Option 3',
-            id: 3,
-            href: 'home',
-            icon: 'inbox'
-        },{
-            name: 'Navigation One',
-            icon: 'mail',
-            id: '101',
-            list: [{
-                id: 5,
-                name: 'Option 5',
-                href: "user"
-            },{
-                id: 6,
-                name: 'Option 6',
-                href: 'home'
-            },{
-                id: 7,
-                name: 'Option 7',
-                href: 'home'
-            },{
-                id: 8,
-                name: 'Option 8',
-                href: 'home'
-            }]
-        },{
-            name: 'Navigation Two',
-            icon: 'appstore',
-            id: '102',
-            list: [{
-                id: 9,
-                name: 'Option 9',
-                href: 'home'
-            },{
-                id: 10,
-                name: 'Option 10',
-                href: 'home'
-            },{
-                name: 'Submenu',
-                id: '103',
-                list: [{
-                    id: 11,
-                    name: 'Option 11',
-                    href: 'home'
-                },{
-                    id: 12,
-                    name: 'Option 12',
-                    href: 'home'
-                }]
-            }]
-        }];
+        const lists = [];
         this.state = {
             lists,
             subIdx: 0
         }
         this.subIdx = 0;
+    }
+
+    getNavs = () =>{
+        fetch('/json/navs.json')
+            .then(respones => respones.json() )
+            .then(data => {
+                    this.setState({lists: data})
+                    const d = {
+                        item: {
+                            props: {
+                                content: {
+                                    key: this.state.lists[0].id,
+                                    href: this.state.lists[0].href,
+                                    title: this.state.lists[0].name
+                                }
+                            }
+                        },
+                        key: 1
+                    };
+                    this.handleClick(d);
+                }
+            )
     }
     handleClick = (data) =>{
         const panes = this.props.panes;
@@ -118,26 +76,17 @@ export class LeftNav extends Component {
             })
         )
     }
+    componentWillMount(){
+    }
     componentDidMount(){
-        const data = {
-            item: {
-                props: {
-                    content: {
-                        key: this.state.lists[0].id,
-                        href: this.state.lists[0].href,
-                        title: this.state.lists[0].name
-                    }
-                }
-            },
-            key: 1
-        };
-        this.handleClick(data);
+        this.getNavs();
+        console.log(this.state.lists)
     }
     render(){
         return(
             <Menu
                 defaultSelectedKeys={['1']}
-                defaultOpenKeys={['sub1']}
+                defaultOpenKeys={['sub0']}
                 mode="inline"
                 theme="dark"
                 onClick={this.handleClick}

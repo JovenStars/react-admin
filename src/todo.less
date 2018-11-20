@@ -1,14 +1,3 @@
-.trigger {
-  font-size: 18px;
-  line-height: 64px;
-  padding: 0 24px;
-  cursor: pointer;
-  transition: color .3s;
-}
-
-.trigger:hover {
-  color: #1890ff;
-}
 
 .logo {
   height: 32px;
@@ -34,4 +23,52 @@
       }
     }
   }
+}
+
+.ant-advanced-search-form {
+  padding: 12px 24px;
+  background: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  .ant-form-item {
+    display: flex;
+  }
+  .ant-form-item-control-wrapper {
+    flex: 1;
+  }
+  .ant-form-item{
+    margin-bottom: 10px;
+  }
+}
+
+.ant-tabs-bar{
+  margin-bottom: 0;
+}
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding: 8px 16px;
+}
+.ant-layout-header{
+  position: relative;
+  .trigger {
+    position: absolute;
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color .3s;
+    &:hover{
+      color: #1890ff;
+    }
+  }
+  .top-bar{
+    padding-right: 20px;
+    text-align: right;
+    .ant-avatar-icon{
+      margin-right: 20px;
+    }
+  }
+
+}
+.ant-tabs.ant-tabs-card > .ant-tabs-bar .ant-tabs-tab .ant-tabs-close-x{
+  margin-left: 10px;
 }
