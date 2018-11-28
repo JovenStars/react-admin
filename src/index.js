@@ -1,24 +1,29 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import 'lodash';
+import { createStore, applyMiddleware, compose } from 'redux';
+import thunk from 'redux-thunk';
+import { Provider } from 'react-redux';
 import { Layout, Icon, Avatar, LocaleProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
-import {LeftNav} from "./leftNav";
-import {RightContent} from "./rightContent";
+import LeftNav from "./leftNav";
+import RightContent from "./rightContent";
 import {OverlayVisible} from "./modules/contentTopBar";
+import {pages} from './redux/index';
 import 'antd/dist/antd.css';
 import './todo.css';
+
 const { Header, Sider } = Layout;
+const store = createStore(pages, compose(
+    applyMiddleware(thunk),
+    window.devToolsExtension ? window.devToolsExtension() : ()=>{}
+));
 
 class SiderDemo extends Component {
     constructor(){
         super();
         this.state = {
-            collapsed: false,
-            activeKey: '1',
-            panes: []
+            collapsed: false
         };
-
     }
 
     toggle = () => {
@@ -26,90 +31,28 @@ class SiderDemo extends Component {
             collapsed: !this.state.collapsed,
         });
     }
-    handlePageChange = (data) => {
-        const panes = this.state.panes;
-        let flag = true;
-        panes.map(pane => {
-            if(pane.key.toString() === data.key.toString()){
-                flag = false;
-            }
-        });
-        if(!flag) return;
-        panes.push(data);
-        this.setState({
-            panes
-        });
-    }
-    /*左侧标签点击*/
-    handleNavClick = (data) => {
-        const panes = this.state.panes;
-        let flag = true;
-        panes.map(pane => {
-            if(pane.key.toString() === data.key.toString()){
-                flag = false;
-                this.setActiveKey(data.key);
-            }
-        });
-        if(!flag) return;
-        panes.push(data);
-        this.setPanes(panes);
-        this.setActiveKey(data.key);
-    }
-    /*设置当前访问页面*/
-    setActiveKey = (key) => {
-        this.setState({
-            activeKey: key.toString()
-        });
-    }
-    /*设置标签页列表*/
-    setPanes = (panes) => {
-        this.setState({
-            panes
-        });
-    }
-    handleChangePages = (panes,activePage) => {
-        this.setState({
-            activeKey: activePage.toString(),
-            panes
-        });
-    }
     render() {
         return (
             <LocaleProvider locale={zh_CN}>
-
-                <Layout>
-                    <Sider
-                        trigger={null}
-                        collapsible
-                        collapsed={this.state.collapsed}
-                    >
-                        <div className="logo" />
-                        <LeftNav
-                            onNavClick={this.handleChangePages}
-                            panes={this.state.panes}
-                            activeKey={this.state.activeKey}
-                        />
-                    </Sider>
+                <Provider store={store}>
                     <Layout>
-                        <Header style={{ background: '#fff', padding: 0 }}>
-                            <Icon
-                                className="trigger"
-                                type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                                onClick={this.toggle}
-                            />
-                            <div className="top-bar">
-                                <Avatar icon="user" />
-                                <OverlayVisible />
-                            </div>
-                        </Header>
-                        <RightContent
-                            onChangeActiveKey={this.setActiveKey}
-                            onPageChange={this.handleChangePages}
-                            panes={this.state.panes}
-                            activeKey={this.state.activeKey}
-                        />
+                        <LeftNav collapsed={this.state.collapsed} />
+                        <Layout>
+                            <Header style={{ background: '#fff', padding: 0 }}>
+                                <Icon
+                                    className="trigger"
+                                    type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                                    onClick={this.toggle}
+                                />
+                                <div className="top-bar">
+                                    <Avatar icon="user" />
+                                    <OverlayVisible />
+                                </div>
+                            </Header>
+                            <RightContent />
+                        </Layout>
                     </Layout>
-                </Layout>
+                </Provider>
             </LocaleProvider>
         );
     }

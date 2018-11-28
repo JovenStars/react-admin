@@ -1,45 +1,35 @@
 import React,{Component} from 'react';
+import { connect } from 'react-redux'
 import {Tabs} from "antd";
+import { addPage, removePage, changePage } from './redux/index';
+
 const TabPane = Tabs.TabPane;
 
-export class RightContent extends Component {
+@connect(
+    state=>state,
+    { addPage, removePage, changePage }
+)
+class RightContent extends Component {
     constructor(props){
         super(props);
         this.newTabIndex = 0;
     }
     onChange = (activeKey) => {
-        this.props.onPageChange(this.props.panes,activeKey)
+        this.props.changePage(activeKey);
     }
 
     onEdit = (targetKey, action) => {
         this[action](targetKey);
     }
 
-    add = (title,href) => {
-        const panes = this.props.panes;
-        const activeKey = `newTab${this.newTabIndex++}`;
-        import('./pages/user').then(data => {
-            const Home = data.default;
-            panes.push({ title: 'New ' +
-                    'Tab', content: <Home />, key: activeKey });
-            this.props.onPageChange(panes,activeKey)
-        });
+    add = () => {
+        const activeKey = `newTab${++this.newTabIndex}`;
+        this.props.addPage({title: activeKey,href: 'user',key: activeKey});
     }
 
 
     remove = (targetKey) => {
-        let activeKey = this.props.activeKey.toString();
-        let lastIndex;
-        this.props.panes.forEach((pane, i) => {
-            if (pane.key.toString() === targetKey.toString()) {
-                lastIndex = i - 1;
-            }
-        });
-        const panes = this.props.panes.filter(pane => pane.key.toString() !== targetKey.toString());
-        if (lastIndex >= 0 && activeKey === targetKey) {
-            activeKey = panes[lastIndex].key;
-        }
-        this.props.onPageChange(panes,activeKey)
+        this.props.removePage(targetKey)
     }
 
     render() {
@@ -59,3 +49,4 @@ export class RightContent extends Component {
         );
     }
 }
+export default RightContent;

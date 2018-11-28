@@ -1,9 +1,16 @@
 ﻿import React,{Component} from "react";
-import { Menu, Icon } from 'antd';
-import './json/navs.json';
+import {Menu, Icon, Layout} from 'antd';
+import { connect } from 'react-redux'
+import { addPage } from './redux/index';
+
 
 const {SubMenu} = Menu;
-export class LeftNav extends Component {
+const { Sider } = Layout;
+@connect(
+    state=> state,
+    { addPage }
+)
+class LeftNav extends Component {
     constructor(props) {
         super(props);
         const lists = [];
@@ -11,50 +18,24 @@ export class LeftNav extends Component {
             lists,
             subIdx: 0
         }
-        this.subIdx = 0;
     }
-
     getNavs = () =>{
         fetch('/json/navs.json')
             .then(respones => respones.json() )
             .then(data => {
                     this.setState({lists: data})
                     const d = {
-                        item: {
-                            props: {
-                                content: {
-                                    key: this.state.lists[0].id,
-                                    href: this.state.lists[0].href,
-                                    title: this.state.lists[0].name
-                                }
-                            }
-                        },
-                        key: 1
+                        key: data[0].id,
+                        href: data[0].href,
+                        title: data[0].name
                     };
-                    this.handleClick(d);
+                    this.props.addPage(d);
                 }
             )
     }
     handleClick = (data) =>{
-        const panes = this.props.panes;
         const page = data.item.props.content;
-        const onclick = this.props.onNavClick;
-        let flag = true;
-        panes.map(pane => {
-            if(pane.key.toString() === page.key.toString()){
-                flag = false;
-            }
-        });
-        if(flag){
-            import(`./pages/${page.href}`).then(mode=>{
-                const Mode = mode.default;
-                page.content = <Mode />;
-                panes.push(page);
-                onclick(panes,data.key);
-            })
-        }else{
-            onclick(panes,data.key);
-        }
+        this.props.addPage(page)
     }
     setNavs = (lists) => {
         return (
@@ -76,24 +57,28 @@ export class LeftNav extends Component {
             })
         )
     }
-    componentWillMount(){
-    }
     componentDidMount(){
         this.getNavs();
-        console.log(this.state.lists)
     }
     render(){
         return(
-            <Menu
-                defaultSelectedKeys={['1']}
-                defaultOpenKeys={['sub0']}
-                mode="inline"
-                theme="dark"
-                onClick={this.handleClick}
+            <Sider
+                trigger={null}
+                collapsible
+                collapsed={this.props.collapsed}
             >
-                {this.setNavs(this.state.lists)}
+                <div className="logo" />
+                <Menu
+                    mode="inline"
+                    theme="dark"
+                    onSelect={this.handleClick}
+                    selectedKeys={[this.props.activeKey]}
+                >
+                    {this.setNavs(this.state.lists)}
 
-            </Menu>
+                </Menu>
+            </Sider>
         )
     }
 }
+export default LeftNav;
