@@ -38,8 +38,12 @@ export function pages(state=initState, action){
             });
             const panes = manage.panes.filter(pane => pane.key.toString() !== removeKey.toString());
             if (lastIndex >= 0 && manage.activeKey === removeKey) {
-                manage.activeKey = manage.panes[lastIndex].key.toString();
-            }else{
+                manage.activeKey = panes[lastIndex].key.toString();
+            }
+            if(lastIndex === -1 && panes.length>0){
+                manage.activeKey = panes[0].key.toString();
+            }
+            if(panes.length === 0){
                 manage.activeKey = '';
             }
             manage.panes = panes;

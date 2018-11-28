@@ -66,13 +66,15 @@ class LeftNav extends Component {
                 trigger={null}
                 collapsible
                 collapsed={this.props.collapsed}
+                className="left-nav"
             >
-                <div className="logo" />
+                <div className="logo" >LOGO</div>
                 <Menu
                     mode="inline"
-                    theme="dark"
+                    theme="light"
                     onSelect={this.handleClick}
                     selectedKeys={[this.props.activeKey]}
+                    style={{color: '#666',background: '#f5f6fb'}}
                 >
                     {this.setNavs(this.state.lists)}
 

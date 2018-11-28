@@ -1,0 +1,21 @@
+.home {
+  width: 100%;
+  min-width: 1280px;
+}
+.home img {
+  width: 100%;
+}
+.home .btns {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+.home .btns a {
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  margin-right: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=home.css.map */

@@ -1,64 +1,47 @@
 import React,{Component} from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware, compose } from 'redux';
-import thunk from 'redux-thunk';
-import { Provider } from 'react-redux';
-import { Layout, Icon, Avatar, LocaleProvider } from 'antd';
-import zh_CN from 'antd/lib/locale-provider/zh_CN';
-import LeftNav from "./leftNav";
-import RightContent from "./rightContent";
-import {OverlayVisible} from "./modules/contentTopBar";
-import {pages} from './redux/index';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Manage } from './manage';
+import { Login } from './login';
 import 'antd/dist/antd.css';
-import './todo.css';
+import './css/home.css';
 
-const { Header, Sider } = Layout;
-const store = createStore(pages, compose(
-    applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : ()=>{}
-));
-
-class SiderDemo extends Component {
-    constructor(){
-        super();
-        this.state = {
-            collapsed: false
-        };
-    }
-
-    toggle = () => {
-        this.setState({
-            collapsed: !this.state.collapsed,
-        });
-    }
-    render() {
-        return (
-            <LocaleProvider locale={zh_CN}>
-                <Provider store={store}>
-                    <Layout>
-                        <LeftNav collapsed={this.state.collapsed} />
-                        <Layout>
-                            <Header style={{ background: '#fff', padding: 0 }}>
-                                <Icon
-                                    className="trigger"
-                                    type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-                                    onClick={this.toggle}
-                                />
-                                <div className="top-bar">
-                                    <Avatar icon="user" />
-                                    <OverlayVisible />
-                                </div>
-                            </Header>
-                            <RightContent />
-                        </Layout>
-                    </Layout>
-                </Provider>
-            </LocaleProvider>
+class Homepage extends Component{
+    render(){
+        return(
+            <Router>
+                <Route component={ModalSwitch} />
+            </Router>
         );
     }
 }
+class ModalSwitch extends React.Component {
+    render() {
+        return (
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/manage" component={Manage} />
+                <Route path="/login" component={Login} />
+                <Route path="/register" component={Manage} />
+            </Switch>
+        );
+    }
+}
+function Home(){
+    return(
+        <div className="home">
+            <div className="btns">
+                <Link to="/login">登录</Link>
+                <Link to="/register">注册</Link>
+            </div>
+            <img src="./images/home.png" alt=""/>
+        </div>
+    )
+}
+
+
 ReactDOM.render(
-    <SiderDemo />,
+    <Homepage />,
     document.getElementById('root')
 );
 

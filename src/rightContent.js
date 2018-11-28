@@ -39,6 +39,7 @@ class RightContent extends Component {
                 activeKey={this.props.activeKey}
                 type="editable-card"
                 onEdit={this.onEdit}
+                className="right-tabs"
             >
                 {this.props.panes.map(pane =>
                     <TabPane tab={pane.title} key={pane.key} closable={pane.closable}>

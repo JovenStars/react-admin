@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dceb7234-2633-42a3-83ac-5314865f17d1" name="Default" comment="11">
-      <change afterPath="$PROJECT_DIR$/src/redux/fn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/back1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/home.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/back1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/manage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/plugins/pace.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/start.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/back.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leftNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/leftNav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/contentTopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/contentTopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rightContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/rightContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todo.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todo.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/manage.less" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,87 +122,121 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="1" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
-          <entry key="js" value="12" />
-          <entry key="json" value="4" />
+          <entry key="js" value="19" />
+          <entry key="json" value="5" />
+          <entry key="less" value="3" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="1" />
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="4" />
-          <entry key="JavaScript" value="12" />
+          <entry key="JSON" value="5" />
+          <entry key="JavaScript" value="19" />
+          <entry key="Less" value="3" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="2223" />
-          <entry key="json" value="11" />
+          <entry key="css" value="21" />
+          <entry key="js" value="3105" />
+          <entry key="json" value="16" />
+          <entry key="less" value="711" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JSON" value="11" />
-          <entry key="JavaScript" value="2223" />
+          <entry key="CSS" value="21" />
+          <entry key="JSON" value="16" />
+          <entry key="JavaScript" value="3105" />
+          <entry key="Less" value="711" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="80">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leftNav.js">
+        <entry file="file://$PROJECT_DIR$/node_modules/pace-js/pace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1451">
-              <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-18199" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="38" selection-start-column="38" selection-end-line="1" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/redux/fn.js">
+        <entry file="file://$PROJECT_DIR$/src/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-              <folding>
-                <element signature="e#1#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="500">
+              <caret line="1012" column="19" selection-start-line="1012" selection-start-column="19" selection-end-line="1012" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/rightContent.js">
+        <entry file="file://$PROJECT_DIR$/src/plugins/pace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-18266" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/home.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/redux/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+            <state relative-caret-position="560">
+              <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/manage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/modules/contentTopBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="27" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -197,8 +244,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
+            <state relative-caret-position="680">
+              <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -207,19 +254,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>onClose</find>
-      <find>setState</find>
-      <find>getNavs</find>
-      <find>.ant-tabs.ant-tabs-card</find>
-      <find>.ant-avatar.ant-avatar-icon</find>
-      <find>expand</find>
-      <find>Header</find>
-      <find>lodash</find>
-      <find>_.</find>
-      <find>3000</find>
-      <find>handlePageChange</find>
-      <find>react-red</find>
-      <find>add</find>
       <find>import(</find>
       <find>handleClick</find>
       <find>import</find>
@@ -237,6 +271,19 @@
       <find>Sider</find>
       <find>addPage</find>
       <find>CHANGE_PAGE</find>
+      <find>.ant-layout-header</find>
+      <find>ant-layout-header</find>
+      <find>logo</find>
+      <find>.ant-layout-sider</find>
+      <find>.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected</find>
+      <find>.ant-menu-dark .ant-menu-item:hover &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-item-active &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-active &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-open &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-selected &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-item:hover &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-item-active &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-active &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-open &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-selected &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:after, .ant-menu-dark .ant-menu-item:hover &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-item-active &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-active &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-open &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-selected &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-title &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-item:hover &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-item-active &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-active &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-open &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-selected &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before, .ant-menu-dark .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-title:hover &gt; .ant-menu-submenu-arrow:before</find>
+      <find>ant-menu-submenu-arrow</find>
+      <find>ant-menu-item-selected</find>
+      <find>.ant-tabs-bar</find>
+      <find>ant-layout</find>
+      <find>./</find>
+      <find>.login-bar input[type=&quot;text&quot;]</find>
+      <find>test</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -249,7 +296,6 @@
         <option value="$PROJECT_DIR$/build/index.html" />
         <option value="$PROJECT_DIR$/src/component/form/select" />
         <option value="$PROJECT_DIR$/build/static/js/1.ace62ad7.chunk.js" />
-        <option value="$PROJECT_DIR$/src/css/style.less" />
         <option value="$PROJECT_DIR$/src/select.js" />
         <option value="$PROJECT_DIR$/src/back.js" />
         <option value="$PROJECT_DIR$/src/json/navs.json" />
@@ -261,15 +307,22 @@
         <option value="$PROJECT_DIR$/src/pages/list1.js" />
         <option value="$PROJECT_DIR$/public/json/navs.json" />
         <option value="$PROJECT_DIR$/src/todo.css" />
-        <option value="$PROJECT_DIR$/src/modules/contentTopBar.js" />
         <option value="$PROJECT_DIR$/src/todo.less" />
         <option value="$PROJECT_DIR$/scripts/start.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/src/rightContent.js" />
         <option value="$PROJECT_DIR$/src/redux/fn.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/leftNav.js" />
         <option value="$PROJECT_DIR$/src/redux/index.js" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/css/style.less" />
+        <option value="$PROJECT_DIR$/src/leftNav.js" />
+        <option value="$PROJECT_DIR$/src/rightContent.js" />
+        <option value="$PROJECT_DIR$/src/css/manage.less" />
+        <option value="$PROJECT_DIR$/src/css/home.less" />
+        <option value="$PROJECT_DIR$/src/login.js" />
+        <option value="$PROJECT_DIR$/src/manage.js" />
+        <option value="$PROJECT_DIR$/src/modules/contentTopBar.js" />
+        <option value="$PROJECT_DIR$/src/css/login.css" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/index.js" />
       </list>
     </option>
   </component>
@@ -290,9 +343,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="260" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -316,13 +370,13 @@
             <path>
               <item name="react-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="react-admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="react-admin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -332,7 +386,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="E:/www/demo/layPage" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="E:\www\reactStudy\app2\node_modules\eslint" />
@@ -340,16 +394,20 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="E:\www\reactStudy\app2\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\WebStorm 2018.2.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="typescript-compiler-editor-notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\react_project\react-admin\react-admin\src\css" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\react_project\react-admin\react-admin\src\plugins" />
+      <recent name="E:\react_project\react-admin\react-admin\src\images" />
+      <recent name="E:\react_project\react-admin\react-admin\public\images" />
+      <recent name="E:\react_project\react-admin\react-admin\public" />
       <recent name="E:\www\reactStudy\app2\public" />
-      <recent name="E:\www\reactStudy\app2\build" />
-      <recent name="E:\www\reactStudy\app2\src\pages" />
-      <recent name="E:\www\reactStudy\app2\src\modules" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -395,7 +453,7 @@
       <workItem from="1542678027380" duration="18206000" />
       <workItem from="1543216898968" duration="12389000" />
       <workItem from="1543297142507" duration="17321000" />
-      <workItem from="1543369224124" duration="2812000" />
+      <workItem from="1543369224124" duration="22951000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1542624545628</created>
@@ -418,11 +476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543217922386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="11">
+      <created>1543374208490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543374208490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153104000" />
+    <option name="totallyTimeSpent" value="173243000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -437,19 +502,19 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15964173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32790446" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.0" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32790446" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.0" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2562432" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="11" visible="true" weight="0.32899022" />
@@ -494,15 +559,8 @@
     <option name="LAST_COMMIT_MESSAGE" value="11" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/serviceWorker.js" />
-    <entry file="file://$PROJECT_DIR$/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/src/logo.svg" />
-    <entry file="file://$PROJECT_DIR$/src/index.css" />
-    <entry file="file://$PROJECT_DIR$/build/static/css/main.dad350ba.chunk.css" />
-    <entry file="file://$PROJECT_DIR$/build/asset-manifest.json" />
     <entry file="file://$PROJECT_DIR$/build/manifest.json" />
-    <entry file="file://$PROJECT_DIR$/src/todo.css.map">
+    <entry file="file://$PROJECT_DIR$/src/css/todo.css.map">
       <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
@@ -542,14 +600,7 @@
     <entry file="file://$PROJECT_DIR$/build/service-worker.js" />
     <entry file="file://$PROJECT_DIR$/build/json/navs.json" />
     <entry file="file://$PROJECT_DIR$/build/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/css/style.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret column="10" selection-start-column="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todo.css">
+    <entry file="file://$PROJECT_DIR$/src/css/todo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="44" selection-end-column="1" />
@@ -570,13 +621,6 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/todo.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="72" column="19" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -646,20 +690,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/react-redux/es/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="131" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modules/contentTopBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modules/dataList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -674,16 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/rightContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/fn.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -694,27 +714,109 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
+    <entry file="file://$PROJECT_DIR$/src/css/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="720">
+          <caret line="183" column="1" selection-start-line="183" selection-start-column="1" selection-end-line="183" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leftNav.js">
+    <entry file="file://$PROJECT_DIR$/scripts/build.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rightContent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1451">
-          <caret line="74" column="56" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
+        <state relative-caret-position="531">
+          <caret line="41" column="37" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="37" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/leftNav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="68" column="36" selection-start-line="68" selection-start-column="36" selection-end-line="68" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/manage.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/redux/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
+        <state relative-caret-position="560">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/home.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modules/contentTopBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="1012" column="19" selection-start-line="1012" selection-start-column="19" selection-end-line="1012" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/plugins/pace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18266" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="38" selection-start-column="38" selection-end-line="1" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/pace-js/pace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18199" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
