@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dceb7234-2633-42a3-83ac-5314865f17d1" name="Default" comment="00">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -435,7 +434,7 @@
       <workItem from="1542678027380" duration="18206000" />
       <workItem from="1543216898968" duration="12389000" />
       <workItem from="1543297142507" duration="17321000" />
-      <workItem from="1543369224124" duration="23978000" />
+      <workItem from="1543369224124" duration="24233000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <created>1542624545628</created>
@@ -479,11 +478,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543398322989</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="00">
+      <created>1543399290627</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543399290627</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174270000" />
+    <option name="totallyTimeSpent" value="174525000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,9 +515,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" visible="true" weight="0.25515744" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.25515744" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49947312" weight="0.25515744" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50052685" side_tool="true" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="10" sideWeight="0.49947312" visible="true" weight="0.0" />
       <window_info active="true" anchor="bottom" id="SVN Repositories" order="11" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="TypeScript" order="12" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.0" />
@@ -556,7 +562,8 @@
       <path value="E:/www/gitee/react-admin" />
     </ignored-roots>
     <MESSAGE value="11" />
-    <option name="LAST_COMMIT_MESSAGE" value="11" />
+    <MESSAGE value="00" />
+    <option name="LAST_COMMIT_MESSAGE" value="00" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build/manifest.json" />
