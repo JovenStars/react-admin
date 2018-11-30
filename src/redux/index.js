@@ -16,7 +16,7 @@ export function pages(state=initState, action){
     switch(action.type){
         case ADD_PAGE:
             let flag = true;
-            manage.panes.some(pane=>{
+            manage.panes.forEach(pane=>{
                 if(pane.key.toString() === page.key.toString()){
                     flag = false;
                 }

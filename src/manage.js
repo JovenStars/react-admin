@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import { createStore, applyMiddleware, compose } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { Layout, Icon, Avatar, LocaleProvider } from 'antd';
+import { Layout, Icon, LocaleProvider } from 'antd';
 import zh_CN from 'antd/lib/locale-provider/zh_CN';
 import LeftNav from "./leftNav";
 import RightContent from "./rightContent";
@@ -10,10 +10,10 @@ import {OverlayVisible} from "./modules/contentTopBar";
 import {pages} from './redux/index';
 import './css/manage.css';
 
-const { Header, Sider } = Layout;
+const { Header } = Layout;
 const store = createStore(pages, compose(
     applyMiddleware(thunk),
-    window.devToolsExtension ? window.devToolsExtension() : ()=>{}
+    window.devToolsExtension ? window.devToolsExtension() : f=>f
 ));
 
 export class Manage extends Component {

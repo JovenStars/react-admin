@@ -36,7 +36,8 @@ export class OverlayVisible extends Component {
                           onVisibleChange={this.handleVisibleChange}
                           visible={this.state.visible}
                 >
-                    <a className="ant-dropdown-link" href="#">
+                    {/*eslint-disable*/}
+                    <a className="ant-dropdown-link" href="javascript:;">
                         操作 <Icon type="down" />
                     </a>
                 </Dropdown>

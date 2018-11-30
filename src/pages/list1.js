@@ -62,6 +62,7 @@ class AdvancedSearchForm extends React.Component {
                         <Button style={{ marginLeft: 8 }} onClick={this.handleReset}>
                             清除
                         </Button>
+                        {/*eslint-disable*/}
                         <a style={{ marginLeft: 8, fontSize: 12 }} onClick={this.toggle}>
                             Collapse <Icon type={this.state.expand ? 'up' : 'down'} />
                         </a>

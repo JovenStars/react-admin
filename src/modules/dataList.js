@@ -1,6 +1,6 @@
 /*数据列表*/
 import React,{Component} from 'react';
-import {Table, Modal, Button, Tag, Form} from 'antd';
+import {Table, Modal, Tag, Form} from 'antd';
 import {DrawerForm} from '../modules/rightDrawerForm';
 
 const data = [];
@@ -23,10 +23,6 @@ function showConfirm() {
         },
         onCancel() {},
     });
-}
-
-function onClose(){
-    Form.create()(DrawerForm);
 }
 
 
@@ -56,6 +52,7 @@ export class ListTable extends Component{
                 title: 'Action',
                 key: 'operation',
                 width: 100,
+                /*eslint-disable*/
                 render: () => <a href="javascript:;" onClick={this.showDrawer}>action</a>,
             },
         ];
